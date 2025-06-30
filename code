@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diario Personal</title>
-<link rel="styleheet" href="nombredelcss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Diario Personal</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .entry {
-            background: #e9ecef;
-            padding: 15px;
-            margin-top: 10px;
-            border-left: 4px solid #d9534f;
-        }
-        .date {
-            font-size: 0.9em;
-            color: #666;
-        }
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+    }
 
-        .imagen2{
-            max-width: 75%;
-            height: auto;
-            border-radius: 20px;
-        }
+    .container-diario {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
 
-        .imagen3{
-            max-width: 75%;
-            height: auto;
-            border-radius: 20px;
-         }
+    h1 {
+      text-align: center;
+      color: #343a40;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
 
-         .imagen3{
-            max-width: 75%;
-            height: auto;
-            border-radius: 20px;
+    .entry {
+      border-left: 5px solid #0d6efd;
+      background-color: #f1f3f5;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
 
-}
-    </style>
+    .entry:hover {
+      background-color: #e2e6ea;
+    }
 
+    .date {
+      font-size: 0.9rem;
+      color: #6c757d;
+      font-weight: bold;
+    }
+
+    .entry img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 576px) {
+      .container-diario {
+        padding: 20px 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Diario Personal</h1>
-        
-        <div class="entry">
-            <p class="date">Fecha: 16 de marzo de 2025</p>
+  <div class="container-diario">
+    <h1>📘 Diario Personal</h1>
 
-            <p>Hoy fue el día más difícil de mi vida. Mientras conducía de regreso a casa, la lluvia dificultaba la visibilidad. Apenas vi a la persona cruzando la calle. Frené, pero ya era tarde. El impacto fue inevitable.</p>
-       
-       
-        
-<center> <img src="https://www.elcolombiano.com/binrepository/1200x800/0c86/1200d627/none/11101/NKFJ/shutterstock-1780628030_41001094_20221104192758.jpg" class="imagen2"></center>
- </div>
+    <div class="entry">
+      <p class="date">📅 16 de marzo de 2025</p>
+      <p>Hoy fue el día más difícil de mi vida. Mientras conducía de regreso a casa, la lluvia dificultaba la visibilidad. Apenas vi a la persona cruzando la calle. Frené, pero ya era tarde. El impacto fue inevitable.</p>
+      <img src="https://www.elcolombiano.com/binrepository/1200x800/0c86/1200d627/none/11101/NKFJ/shutterstock-1780628030_41001094_20221104192758.jpg" alt="Accidente de tránsito">
+    </div>
 
-        <div class="entry">
-            <p class="date">Fecha: 17 de marzo de 2025</p>
+    <div class="entry">
+      <p class="date">📅 17 de marzo de 2025</p>
+      <p>No pude dormir en toda la noche. La imagen del accidente sigue en mi cabeza. Fui al hospital para saber el estado del hombre al que atropellé. Está en estado crítico. La culpa me consume.</p>
+    </div>
 
-            <p>No pude dormir en toda la noche. La imagen del accidente sigue en mi cabeza. Fui al hospital para saber el estado del hombre al que atropellé. Está en estado crítico. La culpa me consume.</p>
-        </div>
+    <div class="entry">
+      <p class="date">📅 18 de marzo de 2025</p>
+      <p>Hoy declaré ante la policía. Expliqué cómo ocurrió todo, pero no deja de atormentarme la idea de que podría haber hecho algo diferente. Su familia estaba allí, y el dolor en sus rostros me partió el alma.</p>
+      <img src="https://th.bing.com/th/id/OIP.GsxI_WnN5f6rY1vMQtnlBQHaD4?rs=1&pid=ImgDetMain" alt="Declaración policial">
+    </div>
 
-        <div class="entry">
-            <p class="date">Fecha: 18 de marzo de 2025</p>
+    <div class="entry">
+      <p class="date">📅 19 de marzo de 2025</p>
+      <p>No sé si algún día podré perdonarme. He empezado a escribir este diario con la esperanza de encontrar un poco de paz. Cada palabra es un intento de sanar.</p>
+    </div>
+  </div>
 
-            <p>Hoy declaré ante la policía. Expliqué cómo ocurrió todo, pero no deja de atormentarme la idea de que podría haber hecho algo diferente. Su familia estaba allí, y el dolor en sus rostros me partió el alma.</p>
-
-<center> <img src="https://th.bing.com/th/id/OIP.GsxI_WnN5f6rY1vMQtnlBQHaD4?rs=1&pid=ImgDetMain" class="imagen3" </center>
-
-        </div>
-
-        <div class="entry">
-            <p class="date">Fecha: 19 de marzo de 2025</p>
+</body>
+</html>
